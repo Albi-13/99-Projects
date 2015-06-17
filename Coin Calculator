@@ -7,8 +7,8 @@ def calc_the_coins():
         return "Your pennies are worth %d dollars and you will need %d wrappers for them" % (Pennies_worth, Pennies_wrappers)
 
     def Nickels_value_and_wrapper_calculator():
-        Nickels_worth = Nickels_weight / 2.5 * 0.01
-        Nickels_wrappers = math.ceil(float(Nickels_weight) / float(50.0))
+        Nickels_worth = Nickels_weight / 5 * 0.02
+        Nickels_wrappers = math.ceil(float(Nickels_weight) / float(40.0))
         return "Your nickels are worth %d dollars and you will need %d wrappers for them" % (Nickels_worth, Nickels_wrappers)
     return Pennies_value_and_wrapper_calculator(), Nickels_value_and_wrapper_calculator()
 
