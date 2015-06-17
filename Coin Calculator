@@ -1,0 +1,19 @@
+__author__ = 'Albi'
+import math
+def calc_the_coins():
+    def Pennies_value_and_wrapper_calculator():
+        Pennies_worth = Pennies_weight / 2.5 * 0.01
+        Pennies_wrappers = math.ceil(float(Pennies_weight) / float(50.0))
+        return "Your pennies are worth %d dollars and you will need %d wrappers for them" % (Pennies_worth, Pennies_wrappers)
+
+    def Nickels_value_and_wrapper_calculator():
+        Nickels_worth = Nickels_weight / 2.5 * 0.01
+        Nickels_wrappers = math.ceil(float(Nickels_weight) / float(50.0))
+        return "Your nickels are worth %d dollars and you will need %d wrappers for them" % (Nickels_worth, Nickels_wrappers)
+    return Pennies_value_and_wrapper_calculator(), Nickels_value_and_wrapper_calculator()
+
+Pennies_weight = input("Give me your weight for Pennies in grams")
+Nickels_weight = input("Give me your weight for Nickels in grams")
+Pennies_weight = int(Pennies_weight)
+Nickels_weight = int(Nickels_weight)
+print calc_the_coins()
